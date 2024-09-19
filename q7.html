@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Table</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.product-table {
+    
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+.product-table th, .product-table td {
+    border: 1px solid green;
+    padding: 12px 15px;
+}
+
+.product-table th {
+    border-color: gray;
+    color: rgb(15, 14, 14);
+}
+
+.sum-row {
+    background-color: grey;
+}
+
+.sum-row th {
+    text-align: right;
+    
+}
+.abc{
+    background-color: green;
+}
+
+
+    </style>
+</head>
+<body>
+    <table class="product-table">
+        <thead>
+            <tr class="abc">
+                <th >Product Name</th>
+                <th>Quantity</th>
+                <th>Price per Unit</th>
+                <th>Description</th>
+                <th>Total Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Product 1</td>
+                <td>2</td>
+                <td>$10</td>
+                <td>This is product 1</td>
+                <td>$20</td>
+            </tr>
+            <tr>
+                <td>Product 2</td>
+                <td>3</td>
+                <td>$20</td>
+                <td>This is product 2</td>
+                <td>$60</td>
+            </tr>
+            <tr class="sum-row" >
+                <th colspan="4">Sum</th>
+                <th>$80</th>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+body {
+    background-image: linear-gradient(to right, rgb(194, 13, 13) , rgb(233, 46, 170));
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.feedback-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 585px;
+}
+
+.feedback-form h2 {
+    margin-bottom: 20px;
+}
+
+.feedback-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form input[type="password"],
+.feedback-form input[type="number"],
+.feedback-form input[type="url"],
+.feedback-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.feedback-form input[type="radio"],
+.feedback-form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.feedback-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.feedback-form button:hover {
+    background-color: #45a049;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form class="feedback-form">
+            <h2>Feedback Form</h2>
+            
+            <label for="feedback-type">Feedback Type:</label><br>
+            <input type="radio" id="compliment" name="feedback-type" value="Compliment">
+            <label for="compliment">Compliment</label><br>
+            <input type="radio" id="suggestion" name="feedback-type" value="Suggestion">
+            <label for="suggestion">Suggestion</label><br>
+            <input type="radio" id="problem" name="feedback-type" value="Problem">
+            <label for="problem">Problem</label><br>
+            
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+            
+            <fieldset>
+                <legend>Website Rating:</legend>
+                <input type="radio" id="excellent" name="rating" value="Excellent">
+                <label for="excellent">Excellent</label><br>
+                <input type="radio" id="good" name="rating" value="Good">
+                <label for="good">Good</label><br>
+                <input type="radio" id="average" name="rating" value="Average">
+                <label for="average">Average</label><br>
+                <input type="radio" id="poor" name="rating" value="Poor">
+                <label for="poor">Poor</label><br>
+            </fieldset>
+            
+            <label for="age">Age (18-100):</label><br>
+            <input type="number" id="age" name="age" min="18" max="100"><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            
+            <label for="password">Password (min. 8 characters):</label><br>
+            <input type="password" id="password" name="password" minlength="8"><br>
+            
+            <label for="website-url">Website URL (optional):</label><br>
+            <input type="url" id="website-url" name="website-url"><br>
+            
+            <input type="checkbox" id="terms" name="terms">
+            <label for="terms">I agree to the terms and conditions</label><br>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
